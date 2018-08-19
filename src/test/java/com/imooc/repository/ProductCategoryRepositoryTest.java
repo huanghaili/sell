@@ -67,6 +67,8 @@ public class ProductCategoryRepositoryTest {
      */
     @Test
     public void findByCategoryTypeInTest() {
+
+        /** 将数组转化为list集合 */
         List<Integer> list = Arrays.asList(2,3,4);
 
         List<ProductCategory> result = repository.findByCategoryTypeIn(list);
